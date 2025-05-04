@@ -1,0 +1,121 @@
+/* Events Section */
+
+/* Font Definitions */
+@font-face {
+    font-family: 'vintagetext'; /* Used for main headings */
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular'; /* Used for general text */
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic'; /* Used for subheadings */
+    src: url('PlayfairDisplaySC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic'; /* Used for bold subheadings */
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+/* Main Events Section Styles */
+.events-section {
+    max-width: 1200px;
+    max-height: 1000px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #FFEEAD;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.events-header {
+    margin-bottom: 2rem;
+}
+
+.events-header h1 {
+    font-family: 'vintagetext';
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #582f06;
+    text-align: left !important;
+}
+
+.events-header p {
+    font-family: 'playfairdisplayregular';
+    font-size: 1.2rem;
+    color: #8b570b;
+    text-align: left;
+}
+
+/* Content Section */
+.events-content {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 2rem;
+    align-items: flex-start; /* Align content to the top */
+    justify-content: space-between; /* Ensure spacing between text and image */
+    overflow: hidden; /* Avoid content overflow */
+}
+
+.events-details {
+    flex: 1; /* Text content takes the remaining space */
+    padding: 1rem 0;
+}
+
+.events-details h2 {
+    font-family: 'vintagetext';
+    font-size: 1.8rem;
+    color: #582f06;
+    margin-bottom: 0.5rem;
+}
+
+.events-details ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #8b570b;
+    font-family: 'playfairdisplayregular';
+}
+
+.events-details ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Event Image */
+.event-image {
+    width: 500px; /* Fixed width */
+    height: 800px; /* Fixed height */
+    border-radius: 8px;
+    flex-shrink: 0; /* Prevent shrinking */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    object-fit: cover; /* Maintain aspect ratio and crop as needed */
+    translate: 600px -330px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+}
+
+.event-image:hover {
+    transform: scale(1.05); /* Slightly enlarge image */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Add deeper shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .events-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align */
+    }
+
+    .event-image {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 1rem; /* Add spacing below image */
+    }
+
+    .events-details {
+        text-align: center; /* Center align text */
+    }
+}

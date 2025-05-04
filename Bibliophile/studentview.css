@@ -1,0 +1,39 @@
+/* All fonts used throughout the website */
+@font-face {
+    font-family: 'vintagetext'; /* Used for main headings mostly throughout the document */
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular'; /* Used for text mostly throughout the document */
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic'; /* Used for sub headings mostly throughout the document */
+    src: url('PlayfairDisplaySC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic'; /* Used for sub headings mostly throughout the document */
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+
+/* Hero Section */
+.hero2-section {
+    background-color: #FFEEAD;
+    background-image: url('studentviewposter\ \(1\).png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        background-size: contain; /* Scale the image for smaller screens */
+    }
+}
+

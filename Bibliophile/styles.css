@@ -1,0 +1,399 @@
+
+/*All fonts used throughout the website*/
+@font-face {
+    font-family: 'vintagetext'; /*used for main headings mostly throughout the document*/
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular'; /*used for text mostly throughout the document*/
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic'; /*used for sub headings mostly throughout the document*/
+    src: url('PlayfairDisplaySC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic'; /*used for sub headings mostly throughout the document*/
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+/* Colours used throughout website
+    color: #181715;
+    color: #3a0c02;
+    color:#3e2205;
+    color:#4A4947;
+    color:#562f05;
+    color: #721c24;
+    color:#a1581d;
+    color:#db9b1b;
+    color:#e6e6e6;
+    color:#f5c6cb;
+    color:#F5E7B2;
+    color:#F5ECE3;
+    color:#fff;
+*/
+
+
+
+/*header*/
+/* Navbar */
+.navbar-light {
+    background-color: #3e2205 !important; /* Lighter orange */
+}
+
+.navbar {
+    padding: 2px 25px; /* Adjust padding to change navbar height */
+}
+
+.navbar-brand img {
+    height: 45px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.main-head {
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 12px;
+    font-family: 'vintagetext' !important;
+}
+
+.nav-link {
+    color: #fff !important; 
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #db9b1b !important;
+    font-weight: bold;
+}
+
+/* Optional - Customize the modal appearance */
+.modal-content {
+    background-color:#FFEEAD; 
+    font-family: 'playfairdisplayregular';
+}
+
+.modal-header {
+    background-color:#a1581d;
+}
+
+.modal-title {
+    color: #fff;
+    font-family: 'vintagetext';
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+
+.btn-primary {
+    background-color: #a1581d;
+    border: none;
+    font-family: 'playfairdisplayregular';
+
+}
+
+.btn-primary:hover {
+    background-color: #181715;
+}
+
+/* Styling for error message */
+.alert-danger {
+    background-color: #a1581d; /* Light red */
+    color: #fff; /* Dark red text */
+    border: 1px solid #3a0c02; /* Border */
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Optional: style for error message inside modal */
+#loginModal .alert-danger {
+    background-color: #a1581d; /* Match the modal background */
+}
+
+
+
+/* Hero Image */
+.hero-image {
+    background-color: #F5ECE3;
+    padding: 20 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.hero-section {
+    text-align: center; 
+    margin: 0 px;
+    
+  }
+
+  .hero-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    font-size: 24px;
+    color: #fff;
+    font-family:'playfairdisplayregular';
+    font-style: italic;
+    
+  }
+  
+
+/* Main Banner */
+.main-banner {
+     background-image: url('booksbg51.png'); 
+    background-size: 1300px;
+    background-position: center;
+    padding: 60px 0; 
+}
+
+ .main-banner h1,
+.main-banner .book-thumbnails .button {
+    position: relative;
+    z-index: 1;
+} 
+
+.main-banner .btn-outline-light{
+    font-family:'playfairdisplayscitalic';
+}
+
+
+.main-banner h1{
+    color: #e6e6e6;
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'vintagetext';
+    text-align: center;
+    transform: translateY(20px);
+    
+}
+
+.btn-outline-light{
+margin-top: 80px;
+}
+
+.book-thumbnails {
+    padding: 0;
+    border: none;
+    display: block;
+}
+
+.book-thumbnails img {
+    margin-top: 60px;
+    width: 200px;
+    height: 300px;
+    border: none;
+    vertical-align: top; 
+}
+
+/* Popular Categories Section */
+.popular-books {
+    background-color:#FFEEAD;
+    padding: 40px 0;
+}
+
+.popular-books h2 {
+    color: #3a0c02;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'vintagetext';
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.popular-books {
+    padding: 50px 0;
+}
+
+.book-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-item h3 {
+    color: #3a0c02;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:'playfairdisplayscitalic';
+}
+
+.carousel-item h5 {
+    color: #3a0c02;
+    font-size: 20px;
+    font-family: 'playfairdisplayscbolditalic';
+}
+
+.carousel-item p{
+    color: #3a0c02;
+    font-size: 18px;
+    font-family: 'playfairdisplayregular';
+
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+
+/* Footer */
+footer {
+    background-color:#3e2205;
+    padding: 40px 20px;
+    color: #fff;
+    font-family: 'playfairdisplayregular';
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1 1 100px;
+}
+
+.footer-logo-img {
+    width: 120px;
+}
+
+.footer-subscribe h5 {
+    font-style: italic;
+}
+
+.subscribe-form input {
+    padding: 8px;
+    border: 1px solid #a1581d;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+}
+
+.subscribe-btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #a1581d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 15px;
+}
+
+.subscribe-btn:hover {
+    background-color:#562f05;
+    color: #F5E7B2;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    filter: brightness(0) invert(1); /* Converts black to white */
+    width: 20px; /* Set size as needed */
+    height: 20px; /* Set size as needed */
+    transition: filter 0.3s ease; /* Smooth transition for hover effect */
+    margin-right: 15px;
+}
+
+.social-links a:hover .social-icon {
+    filter: brightness(0) invert(0.5); /* Change color on hover */
+}
+
+
+/* Footer contact section styling */
+.footer-subscribe {
+    margin-top: 20px; /* Ensure space between subscribe and contact section */
+}
+
+.footer-contact {
+    margin-top: 20px; /* Space between subscribe form and contact */
+}
+
+.footer-contact h5 {
+    font-style: italic;
+    color: #fff; 
+}
+
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+    color: #ffffcc; /* Slight hover color for email link */
+}
+
+/* Site Map Section */
+.footer-sitemap {
+    flex: 1 1 200px; /* Ensure proper sizing in the grid */
+    margin-top: 1rem; /* Space between sections */
+}
+
+.footer-sitemap h5 {
+    font-family: 'playfairdisplayscbolditalic';
+    font-size: 1.5rem;
+    color: #ffffcc;
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* Optional */
+}
+
+.sitemap-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove left padding */
+    margin: 0; /* Remove margin */
+    line-height: 1.8; /* Improve spacing between links */
+}
+
+.sitemap-list li {
+    margin-bottom: 0.3rem; /* Space out items */
+}
+
+.sitemap-list a {
+    font-family: 'playfairdisplayregular', serif;
+    text-decoration: none;
+    color: #e6e6e6; /* Light text color */
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.sitemap-list a:hover {
+    color: #db9b1b; /* Highlight on hover */
+}

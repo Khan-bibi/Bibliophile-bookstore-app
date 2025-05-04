@@ -1,0 +1,148 @@
+/* General Styles */
+@font-face { font-family: 'vintagetext'; src: url('EFCO Brookshire Regular.ttf'); }
+@font-face { font-family: 'playfairdisplayregular'; src: url('PlayfairDisplay-Regular.otf'); }
+@font-face { font-family: 'playfairdisplayscitalic'; src: url('PlayfairDisplaySC-Italic.otf'); }
+@font-face { font-family: 'playfairdisplayscbolditalic'; src: url('PlayfairDisplaySC-BoldItalic.otf'); }
+
+body {
+    background-color: #643013; /* Deep brown background */
+    color: #5a2c0e; /* Dark brown text */
+    font-family: 'playfairdisplayregular', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    margin-top: 35px;
+    padding: 0 15px;
+    transform:translate(50px,-60px);
+}
+
+/* Profile Section */
+.profile-section {
+    padding: 50px 0;
+    text-align: left;
+    background-color: #643013; /* Deep brown background */
+}
+
+/* Profile Information Box */
+.profile-info {
+    background-color: #fff8e1; /* Soft beige background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    font-family: 'playfairdisplayregular';
+    margin-left: 0;
+}
+
+.profile-info p {
+    font-size: 1rem;
+    color: #5a2c0e; /* Dark brown text */
+    margin: 10px 0;
+}
+
+/* Action Buttons */
+.profile-actions {
+    margin-top: 20px;
+}
+
+.profile-actions .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-family: 'playfairdisplayregular';
+    transform: translateX(-70px);
+}
+
+.profile-actions .btn-secondary {
+    background-color: #9b704f; /* Muted beige */
+    border-color: #fff;
+    border-radius: 4px;
+    color: #fff;
+    transition: background-color #9b704f 0.3s ease;
+}
+
+.profile-actions .btn-secondary:hover {
+    border-color: #a35227; /* Dark brown hover */
+    color: #a35227;
+    background-color: #e7ce60;
+}
+
+.profile-actions .btn-secondary:focus {
+    border-color: #a35227; /* Dark brown focus */
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(234, 226, 203, 0.932); 
+}
+
+.profile-actions .btn-warning {
+    background-color: #9b704f; /* Muted beige */
+    border-color: #fff;
+    border-radius: 4px;
+    color: #fff;
+    transition: background-color #9b704f 0.3s ease;
+}
+
+.profile-actions .btn-warning:hover {
+    border-color: #a35227;
+    color: #a35227;
+    background-color: #e7ce60;
+}
+
+.profile-actions .btn-warning:focus {
+    border-color: #a35227; /* Dark brown focus */
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(234, 226, 203, 0.932); 
+}
+
+/* Modal Custom Styles */
+.modal-header {
+    background-color:#a35227; /* Dark brown for header */
+    color: #fff; /* White text for contrast */
+    border-bottom: 1px solid #e2e2e2;
+    font-family: 'playfairdisplayscitalic';
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f5f5f5; /* Soft white */
+}
+
+.modal-body {
+    background-color:#fff8e1; /* Light beige for modal body */
+    padding: 20px;
+    font-family: 'playfairdisplayregular';
+    color: #780d0d; /* Dark brown text */
+}
+
+/* Close Button in Modal */
+.modal-header .close {
+    color: #fff; /* White close button to match theme */
+}
+
+.select:focus{
+    outline: none; /* Remove default outline */
+    border-color: #a75c1e!important; /* New border color when focused */
+    box-shadow: 0 0 0 4px rgba(247, 215, 111, 0.932) !important; 
+}
+
+.btn-primary:focus {
+    outline: none; /* Remove default outline */
+    border-color: #a75c1e!important; /* New border color when focused */
+    box-shadow: 0 0 0 4px rgba(247, 215, 111, 0.932) !important; 
+
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-info {
+        padding: 20px;
+        max-width: 100%; /* Full width on mobile */
+    }
+}

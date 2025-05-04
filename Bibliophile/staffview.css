@@ -1,0 +1,43 @@
+/* Font faces */
+@font-face {
+    font-family: 'vintagetext';
+    src: url('fonts/EFCO Brookshire Regular.ttf'); /* Adjust the path if needed */
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular';
+    src: url('fonts/PlayfairDisplay-Regular.otf'); /* Adjust the path if needed */
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic';
+    src: url('fonts/PlayfairDisplaySC-Italic.otf'); /* Adjust the path if needed */
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic';
+    src: url('fonts/PlayfairDisplaySC-BoldItalic.otf'); /* Adjust the path if needed */
+}
+
+
+/* Hero Section */
+.hero-section {
+    background-color: #FFEEAD;
+    background-image: url('staffviewposter.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .offcanvas {
+        background-size: contain; /* Scale the image for smaller screens */
+    }
+}
+
+
+
+
+

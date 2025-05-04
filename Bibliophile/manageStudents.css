@@ -1,0 +1,207 @@
+/* Font Definitions */
+@font-face {
+    font-family: 'vintagetext'; /* Used for main headings */
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular'; /* Used for general text */
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic'; /* Used for subheadings */
+    src: url('PlayfairDisplaySC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic'; /* Used for bold subheadings */
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+/* Global Styles */
+body {
+    font-family: 'playfairdisplayregular', sans-serif;
+    background-color: #e8b952;
+    margin: 0;
+    padding: 0;
+    color: #4a3311;
+}
+
+/* Main Section */
+.manage-students {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #FFEEAD; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.manage-students h1 {
+    font-family: 'vintagetext', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #4a3311;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+thead {
+    background-color: #4a3311;
+    color: white;
+    font-family: 'playfairdisplayscitalic';
+}
+
+thead th {
+    padding: 15px;
+    text-align: center;
+}
+
+tbody td {
+    padding: 12px 10px;
+    text-align: center;
+    color: #4a3311;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFF5DC;
+}
+
+/* Buttons */
+button {
+    font-family: 'playfairdisplayregular', sans-serif;
+    font-size: 1rem;
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn-edit {
+    background-color: #b37700;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #7b5812;
+}
+
+.btn-delete {
+    background-color: #8b570b;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #5a3824;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .manage-students {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Edit Form Modal */
+.edit-form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFEEAD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    z-index: 10;
+    font-family: 'playfairdisplayregular', sans-serif;
+}
+
+.edit-form-container.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-form h2 {
+    font-family: 'vintagetext', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a3311;
+}
+
+.edit-form label {
+    font-size: 1rem;
+    color: #4a3311;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'playfairdisplayregular', sans-serif;
+}
+
+.edit-form button {
+    background-color: #b37700;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-form button:hover {
+    background-color: #7b5812;
+    transform: scale(1.05);
+}
+
+.btn-close {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-close:hover {
+    background-color: #c82333;
+}

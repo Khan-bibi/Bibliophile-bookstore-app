@@ -1,0 +1,149 @@
+/* Font Definitions */
+@font-face {
+    font-family: 'vintagetext'; /* Used for main headings */
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular'; /* Used for general text */
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic'; /* Used for subheadings */
+    src: url('PlayfairDisplaySC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic'; /* Used for bold subheadings */
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+/* Body Style */
+body {
+    font-family: 'playfairdisplayregular', sans-serif;
+    background-color: #FFEEAD;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Style */
+.manage-students {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #FFEEAD;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Style */
+h1 {
+    font-family: 'vintagetext';
+    font-size: 2.5rem;
+    color: #4a3311;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-family: 'playfairdisplayscbolditalic';
+    color: #4a3311;
+    font-size: 1rem;
+}
+
+input,
+textarea,
+select {
+    font-family: 'playfairdisplayregular';
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #8b570b;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #582f06;
+    box-shadow: 0 0 4px rgba(88, 47, 6, 0.5);
+}
+
+/* File Upload Styling */
+input[type="file"] {
+    font-family: 'playfairdisplayregular';
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: #582f06;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'playfairdisplayscitalic';
+}
+
+input[type="file"]:hover::-webkit-file-upload-button {
+    background-color: #8b570b;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Button Styling */
+button {
+    font-family: 'playfairdisplayscitalic';
+    font-size: 1.2rem;
+    background-color: #582f06;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b570b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .manage-students {
+        padding: 1rem;
+    }
+
+    form {
+        gap: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,83 @@
+/* All fonts used throughout the website */
+@font-face {
+    font-family: 'vintagetext'; /* Used for main headings mostly throughout the document */
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular'; /* Used for text mostly throughout the document */
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic'; /* Used for sub headings mostly throughout the document */
+    src: url('PlayfairDisplaySC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic'; /* Used for sub headings mostly throughout the document */
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+/* Off-Canvas Menu */
+.offcanvas {
+    width: 150px; /* Reduced width for a more compact off-canvas bar */
+    background-color: beige; /* Match page background color */
+    border-right: 1px solid #ddd; /* Optional: subtle border */
+    font-family: 'playfairdisplayregular';
+}
+
+.offcanvas-header {
+    position: relative;
+    padding: 10px 15px; /* Ensure padding is consistent */
+}
+
+.offcanvas-header .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Ensure it's in the top-right corner */
+}
+
+.offcanvas-body {
+    padding: 15px; /* Padding inside the off-canvas menu */
+}
+
+.offcanvas-body ul {
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove default margins */
+    list-style: none; /* Remove bullets */
+}
+
+.offcanvas-body ul li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+.offcanvas-body ul li button {
+    width: 80%; /* Reduced button width */
+    background-color: #5a2c0e; /* Matches homepage link color */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 6px; /* Reduced padding for more compact buttons */
+    text-align: center; /* Center-align button text */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: none; /* Remove any shadow */
+    margin: 0 auto; /* Center the button */
+}
+
+.offcanvas-body ul li button:hover {
+    background-color: #FFEEAD; /* Darker hover effect */
+}
+
+/*responsiveness*/
+@media (max-width: 768px) {
+.offcanvas-title {
+    font-size: 1.2rem; /* Adjust title size */
+}
+
+.offcanvas-body ul li button {
+    padding: 10px; /* Adjust padding for smaller screens */
+}
+}

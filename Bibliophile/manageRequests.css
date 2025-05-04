@@ -1,0 +1,132 @@
+/* Font Definitions */
+@font-face {
+    font-family: 'vintagetext';
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular';
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic';
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+/* General Body Styling */
+body {
+    font-family: 'playfairdisplayregular', sans-serif;
+    background-color: #FFEEAD;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section Styling */
+.manage-requests {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #FFEEAD;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.manage-requests h1 {
+    font-family: 'vintagetext';
+    font-size: 2.5rem;
+    color: #582f06;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+thead {
+    background-color: #4a3311;
+    color: white;
+}
+
+thead th {
+    font-family: 'playfairdisplayscbolditalic';
+    padding: 1rem;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFF5DC;
+}
+
+td {
+    padding: 1rem;
+    color: #582f06;
+    font-family: 'playfairdisplayregular';
+}
+
+/* Buttons Styling */
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+button {
+    font-family: 'playfairdisplayscbolditalic';
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.btn-approve {
+    background-color: #9f6625;
+    color: white;
+}
+
+.btn-approve:hover {
+    background-color: #c49021;
+}
+
+.btn-reject {
+    background-color: #cd6618;
+    color: white;
+}
+
+.btn-reject:hover {
+    background-color: #a97d30;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    thead th {
+        padding: 0.8rem;
+    }
+
+    td {
+        padding: 0.8rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

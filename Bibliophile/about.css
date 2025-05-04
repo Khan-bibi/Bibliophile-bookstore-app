@@ -1,0 +1,87 @@
+/* All fonts used throughout the website */
+@font-face {
+    font-family: 'vintagetext'; /* Used for main headings */
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular'; /* Used for body text */
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic'; /* Used for subheadings */
+    src: url('PlayfairDisplaySC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic'; /* Used for bold subheadings */
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FFEEAD; /* Unified background color */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Section container */
+.about-section {
+    display: flex;
+    justify-content: flex-start; /* Align items left-to-right */
+    align-items: center;
+    padding: 50px;
+    width: 100%; /* Ensure it takes full width */
+    background-color: #FFEEAD; /* Unified background color */
+    max-width: 1800px; /* Optional max-width for content, can adjust */
+    margin: 0 auto; /* Center the section */
+    gap: 30px; /* Space between image and text */
+    box-sizing: border-box; /* Include padding/border in width */
+}
+
+/* Image styling */
+.about-section img {
+    max-width: 40%; /* Image will take up 40% of the container */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Text section */
+.about-text {
+    flex: 1;
+    max-width: 60%; /* Text will take up remaining space */
+    margin-left: 20px; /* Extra margin to ensure spacing */
+}
+
+.about-text h2 {
+    font-family: 'vintagetext';
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #582f06;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #8b570b;
+}
+
+/* Make page responsive */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .about-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .about-section img {
+        max-width: 100%; /* Full-width image for smaller screens */
+    }
+}

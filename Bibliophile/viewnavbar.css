@@ -1,0 +1,62 @@
+/* All fonts used throughout the website */
+@font-face {
+    font-family: 'vintagetext'; /* Used for main headings mostly throughout the document */
+    src: url('EFCO Brookshire Regular.ttf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayregular'; /* Used for text mostly throughout the document */
+    src: url('PlayfairDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscitalic'; /* Used for sub headings mostly throughout the document */
+    src: url('PlayfairDisplaySC-Italic.otf');
+}
+
+@font-face {
+    font-family: 'playfairdisplayscbolditalic'; /* Used for sub headings mostly throughout the document */
+    src: url('PlayfairDisplaySC-BoldItalic.otf');
+}
+
+.navbar {
+    background-color: #3e2205;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 24px !important;
+    margin-top: 6px;
+    font-family: 'vintagetext' !important;
+    transform: translateX(18px);
+}
+
+.menu-btn {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #FFEEAD;
+}
+
+.menu-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.custom-btn {
+    font-family: 'playfairdisplayregular';
+    background-color: #5a2c0e;
+    color: #ffffff;
+    border: none;
+    padding: 5px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: #3e1e08;
+}
