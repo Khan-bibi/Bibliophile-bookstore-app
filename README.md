@@ -145,8 +145,9 @@ This project is intended for **educational purposes** and personal learning only
 
 ---
 
-## 🙌 Contributions
+## 🙌 Contributors
 
-Pull requests are welcome! Feel free to fork the repo and submit improvements.
+Made this project for our Database Systems Semester project.
+Made by [Khan Bibi, Minahil Usman, Iman, Asad]
 
 ---
